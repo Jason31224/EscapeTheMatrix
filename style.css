@@ -1,0 +1,304 @@
+body {
+  background: linear-gradient(135deg, rgb(9, 40, 1) -60%, black);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  z-index: 1000; /* Ensure header stays above other content */
+}
+
+
+.logo-link {
+  margin: 0 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.x{
+  top: 100px;
+  left: 50px;
+}
+
+.telegram{
+  top: 90px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1500px) {
+  header{
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 850px) {
+  header{
+    font-size: 17px;
+  }
+  .x{
+    left: 30px;
+    height:32px;
+    width: 32px;
+  }
+  .telegram{
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  header{
+    font-size: 14px;
+  }
+  .x{
+    left: 20px;
+    height:30px;
+    width: 30px;
+  }
+  .telegram{
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  header{
+    font-size: 10px;
+    height: 100px;
+  }
+  .x{
+    top: 50px;
+    left: 10px;
+    height:24px;
+    width: 24px;
+  }
+  .telegram{
+    top:45px;
+    right: 10px;
+    width: 29px;
+    height: 29px;
+  }
+}
+
+
+
+.green {
+  /* color: rgb(18, 64, 7); */
+  color: #8FFE09;
+}
+
+main {
+  background: linear-gradient(135deg, black 60%, rgb(13, 55, 2));
+  padding: 20px;
+  margin: 0;
+  height: calc(100vh - 200px); /* Adjust height to account for fixed header */
+  color: white;
+  padding-top: 220px; /* Add padding-top to avoid overlap */
+}
+section{
+  margin-bottom: 40px;
+}
+
+li{
+  margin: 12px 0;
+}
+
+.indent {
+  margin-left: 1rem
+}
+
+main h2 {
+  color: rgb(25, 81, 11);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: rgb(25, 81, 11);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 700;
+  margin-left: 65px;
+}
+
+.cta-button:hover {
+  background-color: #8FFE09;
+}
+
+
+
+.Tate{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  left: 32px;
+  top: 408px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 1px;
+}
+
+
+@media (max-width: 1500px) {
+  main{
+    font-size: 15px;
+  }
+  .Tate{
+    top: 397px;
+    height: 37px;
+    width: 37px;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  main{
+    font-size: 14px;
+  }
+  .Tate{
+      top: 387px;
+      height: 36px;
+      width: 36px;
+  }
+}
+
+
+@media (max-width: 850px) {
+  main{
+     font-size: 12px;
+  }
+  .Tate{
+    top: 368px;
+    height: 33px;
+    width: 33px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  main{
+    font-size: 10px;
+  }
+  .Tate{
+    top: 344px;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    font-size: 9px;
+  }
+  header {
+    font-size: 10px;
+    height: 100px;
+  }
+  .x {
+    top: 50px;
+    left: 10px;
+    height: 24px;
+    width: 24px;
+  }
+  .telegram {
+    top: 45px;
+    right: 10px;
+    width: 29px;
+    height: 29px;
+  }
+  .Tate {
+    top: 320px;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+/* Ab 300px */
+@media (max-width: 300px) {
+  main {
+    font-size: 8px;
+  }
+  header {
+    font-size: 8px;
+  }
+  .x {
+    top: 45px;
+    left: 8px;
+    height: 22px;
+    width: 22px;
+  }
+  .telegram {
+    top: 40px;
+    right: 8px;
+    width: 25px;
+    height: 25px;
+  }
+  .Tate {
+    top: 300px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+/* Ab 150px */
+@media (max-width: 150px) {
+  main {
+    font-size: 6px;
+  }
+  header {
+    font-size: 6px;
+  }
+  .x {
+    top: 40px;
+    left: 5px;
+    height: 18px;
+    width: 18px;
+  }
+  .telegram {
+    top: 35px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  .Tate {
+    top: 280px;
+    height: 20px;
+    width: 20px;
+  }
+}
